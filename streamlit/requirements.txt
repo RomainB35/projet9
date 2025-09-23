@@ -1,0 +1,7 @@
+streamlit
+requests
+soundfile
+numpy
+matplotlib
+streamlit-audiorecorder
+
