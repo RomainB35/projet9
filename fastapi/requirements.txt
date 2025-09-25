@@ -1,0 +1,6 @@
+fastapi
+uvicorn[standard]
+faster-whisper==1.2.0
+pydantic
+python-multipart
+
