@@ -1,2 +1,0 @@
-1. Lancer le script download_model.py pour télécharger le modèle
-2. Build l'image docker en utilisant le dockerfile
