@@ -1,6 +1,6 @@
 # 🚀 Projet 9 — Déploiement d'un modèle de transcription audio
 
-Ce projet contient deux services complémentaires :
+Ce répertoire contient le code pour créer deux images docker qui servent à mettre en oeuvre un service de transcription audio vers texte :
 
 - **FastAPI** : expose une API qui sert un modèle **faster-whisper distilled (français)**.  
 - **Streamlit** : fournit une interface web de démonstration pour interagir avec le modèle.  
@@ -24,8 +24,6 @@ projet9/
         ├── app.py
         ├── transcripts.json
         └── samples/
-            ├── common_voice_fr_17321360.mp3
-            ├── common_voice_fr_18056639.mp3
             ├── ...
 
 ```
