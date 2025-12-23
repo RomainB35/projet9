@@ -68,11 +68,18 @@ docker build -t projet9-streamlit .
 
 ## ▶️ Lancer les conteneurs
 
+### 0. Créer un réseau docker pour connecter les containers Fastapi et Streamlit
+
+```bash
+docker network create webnet
+```
+
 ### 1. Lancer FastAPI
 
 ```bash
 docker run -d \
   --name projet9-fastapi \
+  --network webnet \
   -p 10300:10300 \
   projet9-fastapi
 ```
@@ -87,6 +94,7 @@ L’API sera accessible sur :
 ```bash
 docker run -d \
   --name projet9-streamlit \
+  --network webnet \
   -p 8501:8501 \
   projet9-streamlit
 ```
