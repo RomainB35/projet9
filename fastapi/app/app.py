@@ -8,7 +8,7 @@ import uuid
 app = FastAPI(title="ASR Whisper API")
 
 # Charger le modèle une fois au démarrage (modèle CTranslate2 local)
-MODEL_PATH = "/app/models/whisper-large-v3-french-distil-dec16-ct2/ctranslate2"
+MODEL_PATH = "/app/app/models/whisper-large-v3-french-distil-dec16/ctranslate2"
 model = WhisperModel(MODEL_PATH, device="cpu", compute_type="int8")
 
 class Segment(BaseModel):
