@@ -5,7 +5,7 @@ from pathlib import Path
 from io import BytesIO
 from audiorecorder import audiorecorder
 
-FASTAPI_URL = "http://fastapi:10300/transcribe"
+FASTAPI_URL = "http://projet9-fastapi:10300/transcribe"
 
 # Charger transcriptions CommonVoice
 with open("samples_commonvoice21/transcripts.json", "r", encoding="utf-8") as f:
